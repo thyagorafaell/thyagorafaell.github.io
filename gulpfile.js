@@ -1,10 +1,10 @@
 var gulp = require('gulp'),
 autoprefixer = require('gulp-autoprefixer'),
 concat = require('gulp-concat'),
-cssMinify = require('gulp-cssMinify'),
+cssMinify = require('gulp-csso'),
 comb = require('gulp-csscomb'),
-htmlReplace = require('gulp-htmlReplace'),
-htmlMinify = require('gulp-htmlMinify'),
+htmlReplace = require('gulp-html-replace'),
+htmlMinify = require('gulp-minify-html'),
 rename = require('gulp-rename'),
 sass = require('gulp-sass'),
 jsMinify = require('gulp-uglify'),
@@ -30,7 +30,7 @@ gulp.task('js', function() {
     .pipe(gulp.dest('dist/'))
 });
 
-gukp.task('html', function() {
+gulp.task('html', function() {
     return gulp.src(htmlFiles)
     .pipe(htmlMinify())
     .pipe(concat('main.html'))
@@ -40,10 +40,10 @@ gukp.task('html', function() {
 gulp.task('site', function() {
     return gulp.src('main/index.html')
     .pipe(htmlReplace({
-        'css': ['dist/main.min.css'],
-        'html': ['dist/main.min.html'],
-        'js': ['dist/main.min.js'],
+        //'css': ['dist/main.min.css'],
+        'html': 'dist/main.html'//,
+        //'js': ['dist/main.min.js'],
     }))
     .pipe(rename('index.html'))
-    .pipe(gulp.dest('/'))
+    .pipe(gulp.dest(''))
 });
