@@ -16,7 +16,9 @@
     "gulp": "^3.8.10",
     "gulp-minify-html": "^0.1.7"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-file-include": "^0.5.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

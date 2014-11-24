@@ -3,7 +3,8 @@ autoprefixer = require('gulp-autoprefixer'),
 concat = require('gulp-concat'),
 cssMinify = require('gulp-csso'),
 comb = require('gulp-csscomb'),
-htmlReplace = require('gulp-html-replace'),
+//htmlReplace = require('gulp-html-replace'),
+file = require('gulp-file-include'),
 htmlMinify = require('gulp-minify-html'),
 rename = require('gulp-rename'),
 sass = require('gulp-sass'),
@@ -39,11 +40,16 @@ gulp.task('html', function() {
 
 gulp.task('site', function() {
     return gulp.src('main/index.html')
-    .pipe(htmlReplace({
-        //'css': ['dist/main.min.css'],
-        'html': 'dist/main.html'//,
-        //'js': ['dist/main.min.js'],
+    .pipe(file({
+        prefix: '@@',
+        basepath: '@file'
     }))
+    //.pipe(htmlReplace({
+        //'css': ['dist/main.min.css'],
+        //'html': 'dist/main.html'//,
+        //'js': ['dist/main.min.js'],
+    //}))
+    .pipe(htmlMinify())
     .pipe(rename('index.html'))
     .pipe(gulp.dest(''))
 });
