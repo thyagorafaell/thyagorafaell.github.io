@@ -31,7 +31,7 @@ gulp.task('js', function () {
         .pipe(gulp.dest('dist/'))
 });
 
-gulp.task('site', function () {
+gulp.task('html', function () {
     return gulp.src('main/index.html')
         .pipe(file({
             prefix: '@@',
@@ -45,4 +45,10 @@ gulp.task('site', function () {
         .pipe(htmlMinify())
         .pipe(rename('index.html'))
         .pipe(gulp.dest(''))
+});
+
+gulp.task('site', function () {
+    gulp.run('css');
+    // gulp.run('js');
+    gulp.run('html');
 });
