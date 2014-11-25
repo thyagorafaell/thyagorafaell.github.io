@@ -3,7 +3,6 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     cssMinify = require('gulp-csso'),
     comb = require('gulp-csscomb'),
-    //htmlReplace = require('gulp-html-replace'),
     file = require('gulp-file-include'),
     htmlMinify = require('gulp-minify-html'),
     rename = require('gulp-rename'),
@@ -37,11 +36,6 @@ gulp.task('html', function () {
             prefix: '@@',
             basepath: '@file'
         }))
-        //.pipe(htmlReplace({
-        //'css': ['dist/main.min.css'],
-        //'html': 'dist/main.html'//,
-        //'js': ['dist/main.min.js'],
-        //}))
         .pipe(htmlMinify())
         .pipe(rename('index.html'))
         .pipe(gulp.dest(''))
