@@ -1,15 +1,36 @@
 @import 'reset';
+@import 'grid';
 
-* { box-sizing: border-box; }
+html { font-family: arial, sans-serif; }
 
-body { margin: 0; }
+.center { text-align: center; }
+
+.pull-right { float: right; }
+
+.pull-left { float: left; }
 
 .all-content {
     width: 100%;
 
-    &:nth-child(odd) { background: #00b0eb; }
+    &:nth-child(odd) {
+        color: #ffffff;
+        background: darken(#00b0eb, 5%);
+    }
 
-    &:nth-child(even) { background: #ffffff; }
+    &:nth-child(even) {
+        color: #606060;
+        background: #ffffff;
+    }
+
+    &::before, &::after {
+        display: table;
+        content: "";
+        line-height: 0;
+    }
+
+    &::after {
+        clear: both;
+    }
 }
 
 .container {
@@ -17,4 +38,36 @@ body { margin: 0; }
     max-width: 800px;
     margin: auto;
     padding: 40px;
+
+    &::before, &::after {
+        display: table;
+        content: "";
+        line-height: 0;
+    }
+
+    &::after {
+        clear: both;
+    }
+}
+
+.img-circle { border-radius: 50%; }
+
+#interface { background: #ffffff; }
+
+.skill-tag {
+    background: rgba(215, 16, 69, 0.8);
+    font-size: 14px;
+    font-style: normal;
+    padding: 2px 4px;
+    margin-top: 4px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.internship-tag {
+    font-size: 70%;
+    font-weight: normal;
+    border: 1px solid #ffffff;
+    padding: 2px 4px;
+    border-radius: 4px;
 }

@@ -13,10 +13,11 @@
     <meta name="googlebot" content="all, index, follow">
 
     <link rel="canonical" href="http://thyagorafaell.github.io">
+    <link rel="stylesheet" href="dist/main.css">
 
-    <title>Thyago Rafael - Front-end Engineer @ Joinville</title>
+    <title>Thyago Rafael - Front-end Engineer</title>
 
-    <style>@@include('../dist/main.css')</style>
+    <!--[if lte IE 9]><script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
 </head>
 <body>
     @@include('../html/header.html')
@@ -26,6 +27,8 @@
     @@include('../html/posts.html')
     @@include('../html/footer.html')
 
-    <script async>@@include('../dist/main.js')</script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/moment.locale.js"></script>
+    <script src="dist/main.js" async defer></script>
 </body>
 </html>

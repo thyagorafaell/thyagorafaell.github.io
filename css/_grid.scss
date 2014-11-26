@@ -1,0 +1,98 @@
+.grid {
+    float: left;
+    padding: 0 10px;
+    
+    &::before, &::after {
+        display: table;
+        content: "";
+        line-height: 0;
+    }
+
+    &::after {
+        clear: both;
+    }
+}
+
+.grid-1 {
+    @extend .grid;
+     width: 100% / 12;
+
+    @media (max-width: 600px) { width: 100% / 12 * 3; }
+}
+
+.grid-2 {
+    @extend .grid;
+     width: 100% / 12 * 2;
+
+    @media (max-width: 600px) {  width: 100% / 12 * 6; }
+}
+
+.grid-3 {
+    @extend .grid;
+     width: 100% / 12 * 3;
+
+    @media (max-width: 600px) { width: 100% / 12 * 9; }
+}
+
+.grid-4 {
+    @extend .grid;
+     width: 100% / 12 * 4;
+
+    @media (max-width: 600px) { width: 100%; }
+}
+
+.grid-5 {
+    @extend .grid;
+     width: 100% / 12 * 5;
+
+    @media (max-width: 600px) { width: 100%; }
+}
+
+.grid-6 {
+    @extend .grid;
+     width: 100% / 12 * 6;
+
+    @media (max-width: 600px) { width: 100%; }
+}
+
+.grid-7 {
+    @extend .grid;
+    width: 100% / 12 * 7;
+
+    @media (max-width: 600px) { width: 100%; }
+}
+
+.grid-8 {
+    @extend .grid;
+     width: 100% / 12 * 8;
+
+    @media (max-width: 600px) { width: 100%; }
+}
+
+.grid-9 {
+    @extend .grid;
+     width: 100% / 12 * 9;
+
+    @media (max-width: 600px) { width: 100%; }
+}
+
+.grid-10 {
+    @extend .grid;
+     width: 100% / 12 * 10;
+
+    @media (max-width: 600px) { width: 100%; }
+}
+
+.grid-11 {
+    @extend .grid;
+    width: 100% / 12 * 11;
+
+    @media (max-width: 600px) { width: 100%; }
+}
+
+.grid-12 {
+    @extend .grid;
+    width: 100%;
+
+    @media (max-width: 600px) { width: 100%; }
+}
