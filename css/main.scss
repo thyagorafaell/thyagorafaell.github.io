@@ -28,9 +28,7 @@ html { font-family: arial, sans-serif; }
         line-height: 0;
     }
 
-    &::after {
-        clear: both;
-    }
+    &::after { clear: both; }
 }
 
 .container {
@@ -45,9 +43,7 @@ html { font-family: arial, sans-serif; }
         line-height: 0;
     }
 
-    &::after {
-        clear: both;
-    }
+    &::after { clear: both; }
 }
 
 .img-circle { border-radius: 50%; }
@@ -62,6 +58,7 @@ html { font-family: arial, sans-serif; }
     margin-top: 4px;
     display: inline-block;
     border-radius: 4px;
+    color: #ffffff;
 }
 
 .internship-tag {

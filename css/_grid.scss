@@ -1,16 +1,14 @@
 .grid {
     float: left;
     padding: 0 10px;
-    
+
     &::before, &::after {
         display: table;
         content: "";
         line-height: 0;
     }
 
-    &::after {
-        clear: both;
-    }
+    &::after { clear: both; }
 }
 
 .grid-1 {
