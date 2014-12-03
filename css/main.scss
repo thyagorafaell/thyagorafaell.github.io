@@ -44,6 +44,16 @@ html { font-family: arial, sans-serif; }
     }
 
     &::after { clear: both; }
+
+    article {
+        &::before, &::after {
+            display: table;
+            content: "";
+            line-height: 0;
+        }
+
+        &::after { clear: both; }
+    }
 }
 
 .img-circle { border-radius: 50%; }
