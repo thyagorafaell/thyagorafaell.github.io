@@ -1,1 +1,0 @@
-!function(e,n){var o=e.moment("2013-09-23"),m=e.moment();n.querySelector('[data-role="softers-time"]').innerHTML="Há mais ou menos "+moment.duration(m.diff(o)).humanize()}(window,document);
