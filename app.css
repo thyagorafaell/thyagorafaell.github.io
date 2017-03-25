@@ -64,7 +64,7 @@ body {
     margin: 0;
 }
 
-@media (max-width: 490px) {
+@media (min-width: 490px) {
     body {
         -webkit-animation: background-color-animation 180s ease infinite;
            -moz-animation: background-color-animation 180s ease infinite;
