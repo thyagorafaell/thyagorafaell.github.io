@@ -70,7 +70,7 @@ body {
            -moz-animation: background-color-animation 180s ease infinite;
              -o-animation: background-color-animation 180s ease infinite;
                 animation: background-color-animation 180s ease infinite;
-        background: linear-gradient(270deg, #45c3a2, #453eac, #811b24);
+        background: linear-gradient(270deg, #6f9fd2, #4a79ab, #2b4a6b);
         background-size: 600% 600%;
         margin: 10px;
     }
