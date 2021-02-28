@@ -18,6 +18,10 @@
   "homepage": "thyagorafaell.github.io",
   "devDependencies": {
     "css-inliner": "^2.0.0",
-    "html-minifier": "^4.0.0"
+    "html-minifier": "^4.0.0",
+    "ncp": "^2.0.0"
+  },
+  "dependencies": {
+    "@jamesives/github-pages-deploy-action": "^4.0.0"
   }
 }
