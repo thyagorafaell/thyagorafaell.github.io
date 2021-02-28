@@ -23,7 +23,8 @@ ncp('./src/assets', './dist', function (err) {
         .then(function(inlineCSSinHTML) {
             var minifiedHTML = htmlMinifier(inlineCSSinHTML, {
                 collapseInlineTagWhitespace: true,
-                collapseWhitespace: false,
+                collapseWhitespace: true,
+                conservativeCollapse: true,
                 minifyCSS: true,
                 removeAttributeQuotes: true
             });
