@@ -1,0 +1,27 @@
+{
+  "name": "thyagorafaell.github.io",
+  "version": "1.0.0",
+  "description": "thyagorafaell.github.io",
+  "main": "index.html",
+  "scripts": {
+    "build": "node ./scripts/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thyagorafaell/thyagorafaell.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thyagorafaell/thyagorafaell.github.io/issues"
+  },
+  "homepage": "thyagorafaell.github.io",
+  "devDependencies": {
+    "css-inliner": "^2.0.0",
+    "html-minifier": "^4.0.0",
+    "ncp": "^2.0.0"
+  },
+  "dependencies": {
+    "@jamesives/github-pages-deploy-action": "^4.0.0"
+  }
+}
