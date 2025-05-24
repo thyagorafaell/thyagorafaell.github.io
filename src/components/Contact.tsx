@@ -29,7 +29,7 @@ const Contact = () => {
                 </h2>
                 <div className={'w-16 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mx-auto mb-8'}></div>
                 <p className={'text-lg text-slate-600 max-w-2xl mx-auto'}>
-                    Ready to bring your ideas to life? Let's discuss your next project
+                    Ready to bring your ideas to life? Let's discuss your next project.
                 </p>
             </div>
             <div className={'max-w-4xl mx-auto'}>
@@ -109,7 +109,7 @@ const Contact = () => {
 
             <div className={'text-center mt-16 pt-8 border-t border-slate-200'}>
                 <p className={'text-slate-500'}>
-                    © {year} Thyago Rafael. Crafted with passion and precision.
+                    © {year} Thyago Rafael
                 </p>
             </div>
         </section>

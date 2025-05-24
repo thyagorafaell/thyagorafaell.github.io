@@ -5,25 +5,17 @@ const Skills = () => {
     const skillCategories = [{
         icon: Code,
         title: 'Frontend Development',
-        skills: ['React', 'TypeScript', 'Tailwind CSS', 'Next.js', 'Vue.js'],
+        skills: ['React', 'TypeScript', 'Tailwind CSS', 'Next.js'],
         color: 'from-blue-500 to-cyan-500'
-    },
-    {
+    }, {
         icon: Database,
         title: 'Backend Development',
-        skills: ['Node.js', 'Python', 'PostgreSQL', 'MongoDB', 'REST APIs'],
+        skills: ['Node.js', 'AWS', 'PostgreSQL', 'Observability'],
         color: 'from-green-500 to-emerald-500'
-    },
-    {
-        icon: Palette,
-        title: 'UI/UX Design',
-        skills: ['Figma', 'Adobe XD', 'Prototyping', 'User Research', 'Design Systems'],
-        color: 'from-purple-500 to-pink-500'
-    },
-    {
+    }, {
         icon: Globe,
-        title: 'DevOps & Tools',
-        skills: ['Git', 'Docker', 'AWS', 'CI/CD', 'Linux'],
+        title: 'Leadership',
+        skills: ['Agile', 'Mentoring', '1:1 & Performance Reviews', 'Recruiting & Compensation'],
         color: 'from-orange-500 to-red-500'
     }];
 
@@ -39,7 +31,7 @@ const Skills = () => {
                     </p>
                 </div>
 
-            <div className={'grid md:grid-cols-2 lg:grid-cols-4 gap-8'}>
+            <div className={'grid md:grid-cols-1 lg:grid-cols-3 gap-8'}>
                 {
                     skillCategories.map(category => (
                         <div
