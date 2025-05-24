@@ -1,5 +1,5 @@
 
-import { Mail, Github, Linkedin, ExternalLink, Send } from 'lucide-react';
+import { Mail, Github, Linkedin, Send } from 'lucide-react';
 
 const Contact = () => {
     const year = new Date().getFullYear();
