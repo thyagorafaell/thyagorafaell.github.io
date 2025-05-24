@@ -31,15 +31,6 @@ const Contact = () => {
                 <div className={'w-16 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mx-auto mb-8'}></div>
             </div>
             <div className={'max-w-4xl mx-auto'}>
-                { /* if (state.succeeded) {
-                    return (
-                        <div>
-                            <p>Thanks!</p>;<button onClick={reset}>Reset</button>
-                        </div>
-                    );
-                } */ }
-            </div>
-            <div className={'max-w-4xl mx-auto'}>
                 <div className={'grid lg:grid-cols-2 gap-16'}>
                     <div className={'space-y-8'}>
                         <div>
