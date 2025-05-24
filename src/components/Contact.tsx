@@ -1,5 +1,6 @@
 
-import { Mail, Github, Linkedin, Send } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
+import ContactForm from './ContactForm';
 
 const Contact = () => {
     const year = new Date().getFullYear();
@@ -28,9 +29,15 @@ const Contact = () => {
                     Let's Connect
                 </h2>
                 <div className={'w-16 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mx-auto mb-8'}></div>
-                <p className={'text-lg text-slate-600 max-w-2xl mx-auto'}>
-                    Ready to bring your ideas to life? Let's discuss your next project.
-                </p>
+            </div>
+            <div className={'max-w-4xl mx-auto'}>
+                { /* if (state.succeeded) {
+                    return (
+                        <div>
+                            <p>Thanks!</p>;<button onClick={reset}>Reset</button>
+                        </div>
+                    );
+                } */ }
             </div>
             <div className={'max-w-4xl mx-auto'}>
                 <div className={'grid lg:grid-cols-2 gap-16'}>
@@ -60,53 +67,10 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className={'bg-white rounded-2xl p-8 shadow-sm'}>
-                        <form className={'space-y-6'}>
-                            <div className={'grid md:grid-cols-2 gap-6'}>
-                                <div>
-                                    <label className={'block text-sm font-medium text-slate-700 mb-2'}>
-                                        Name
-                                    </label>
-                                    <input
-                                        type={'text'}
-                                        className={'w-full px-4 py-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200'}
-                                        placeholder={'Your name'}
-                                    />
-                                </div>
-                                <div>
-                                    <label className={'block text-sm font-medium text-slate-700 mb-2'}>
-                                        Email
-                                    </label>
-                                    <input
-                                        type={'email'}
-                                        className={'w-full px-4 py-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200'}
-                                        placeholder={'your@email.com'}
-                                    />
-                                </div>
-                            </div>
-
-                            <div>
-                                <label className={'block text-sm font-medium text-slate-700 mb-2'}>
-                                    Message
-                                </label>
-                                <textarea
-                                    rows={6}
-                                    className={'w-full px-4 py-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none'}
-                                    placeholder={'Tell me about your project...'}
-                                ></textarea>
-                            </div>
-
-                            <button
-                                type={'submit'}
-                                className={'group w-full flex items-center justify-center gap-2 px-8 py-4 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition-all duration-300 hover:scale-[1.02]'}
-                            >
-                                Send Message
-                                <Send className={'w-4 h-4 group-hover:translate-x-1 transition-transform'} />
-                            </button>
-                        </form>
+                        <ContactForm />
                     </div>
                 </div>
             </div>
-
             <div className={'text-center mt-16 pt-8 border-t border-slate-200'}>
                 <p className={'text-slate-500'}>
                     © {year} Thyago Rafael
